@@ -7,6 +7,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 
   --background-input-1: #fdfafa;
   --background-button-1: #04c45c;
@@ -31,6 +32,10 @@ html {
   width: 100%;
 }
 
+.container span {
+  font-size: 1.6rem;
+}
+
 .container label {
   font-size: 1.6rem;
 }
@@ -42,6 +47,15 @@ html {
   line-height: 1.9rem;
 
   background-color: var(--background-input-1);
+}
+
+.container button {
+  width: 100%;
+  padding: 16px 0;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
 }
 
 .container .modal-container button {
