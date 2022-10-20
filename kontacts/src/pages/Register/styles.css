@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 0 1.2rem;
 }
 
 .register .form-title {
@@ -74,28 +75,18 @@
 }
 
 @media (max-width: 768px) {
-  .container .aside-image {
+  .register .aside-image {
     display: none;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .register .content {
+    width: 100vw;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .register form {
+    width: 100%;
   }
 
-  .content .inputs {
-    width: 75%;
-  }
-
-  .content .buttons {
-    width: 75%;
+  .register .buttons {
   }
 }

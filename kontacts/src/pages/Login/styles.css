@@ -11,7 +11,7 @@
 
 .login-content {
   width: 50vw;
-  padding: 0 120px;
+  padding: 0 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,41 +19,63 @@
 }
 
 .login .welcome {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.9rem;
 }
 
 .login form {
-  width: 476px;
+  width: 47.6rem;
 }
 
 .login .form-title {
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 3.8rem;
 
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .login .inputs {
-  gap: 16px;
-  margin-bottom: 70px;
+  gap: 1.6rem;
+  margin-bottom: 7rem;
 }
 
 .login button {
   width: 100%;
-  padding: 16px 0;
+  padding: 1.6rem 0;
 
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 1.9rem;
 
-  margin-bottom: 95px;
+  margin-bottom: 9.5rem;
   background-color: var(--background-button-1);
 }
 
 .login a {
   text-decoration: none;
   color: var(--link-color-1);
+}
+
+@media (max-width: 768px) {
+  .login {
+    max-height: 100vh;
+  }
+
+  .login .aside-image {
+    display: none;
+  }
+
+  .login-content {
+    width: 100vw;
+  }
+
+  .login form {
+    width: 100%;
+  }
+
+  .login .inputs {
+    align-self: center;
+  }
 }
