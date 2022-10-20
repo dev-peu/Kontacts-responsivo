@@ -1,0 +1,66 @@
+.register .content {
+  display: flex;
+  min-width: 50vw;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register .form-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+
+  margin-bottom: 40px;
+}
+
+.register form {
+  width: 476px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register .inputs {
+  gap: 16px;
+  margin-bottom: 70px;
+}
+
+.register .buttons {
+  gap: 8px;
+  display: flex;
+  margin-bottom: 90px;
+  flex-direction: column;
+}
+
+.register .buttons .submit {
+  background-color: var(--background-button-1);
+}
+
+.buttons .submit:hover {
+  background-color: #05ab52;
+}
+
+.register .buttons .cancel {
+  background-color: var(--background-button-2);
+}
+
+.buttons .cancel:hover {
+  background-color: rgba(228, 10, 24, 0.65);
+}
+
+.register a {
+  text-decoration: none;
+  color: var(--link-color-1);
+}
+
+.register .aside-image {
+  display: flex;
+  width: 50vw;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/aside-register.png");
+}

@@ -1,0 +1,35 @@
+.row-container {
+  display: flex;
+
+  width: 100%;
+  padding: 16px 32px;
+  background-color: var(--background-color-2);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-font-1);
+
+  position: relative;
+}
+
+.row-container span {
+  width: 30%;
+  text-align: left;
+}
+
+.row-container .icons {
+  display: flex;
+  gap: 16px;
+
+  position: absolute;
+  right: 32px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}

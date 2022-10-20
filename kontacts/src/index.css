@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+  --background-input-1: #fdfafa;
+  --background-button-1: #04c45c;
+  --background-button-2: rgba(251, 6, 21, 0.65);
+  --link-color-1: #1972a8;
+  --background-header-1: #134563;
+  --background-color-1: #f4f0f0;
+  --background-color-2: #fffafa;
+  --color-font-1: #1c1414;
+  --background-color-modal: rgba(16, 15, 15, 0.56);
+}
+
+.container {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container input {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  background-color: var(--background-input-1);
+}
+
+.container .modal-container button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}

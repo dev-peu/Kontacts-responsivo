@@ -1,0 +1,38 @@
+.dashboard {
+  flex-direction: column;
+  position: relative;
+}
+
+.dashboard .content {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100%;
+  padding: 100px 240px 0px;
+}
+
+.dashboard .button-add {
+  max-width: 235px;
+  padding: 16px 0px;
+  border-radius: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  background-color: var(--background-button-1);
+
+  margin-bottom: 30px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
