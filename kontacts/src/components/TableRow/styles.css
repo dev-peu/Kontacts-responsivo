@@ -18,6 +18,10 @@
   text-align: left;
 }
 
+.row-container .clip{
+  display: none;
+}
+
 .row-container .icons {
   display: flex;
   gap: 16px;
@@ -32,4 +36,18 @@
 
 .icons img:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1000px){
+  .row-container{
+  background-color: var(--background-color-3);
+  }
+
+  .row-container span, .row-container .icons{
+    display: none;
+  }
+
+  .row-container .name{
+    display: block;
+  }
 }

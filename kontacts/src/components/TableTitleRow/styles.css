@@ -14,3 +14,9 @@
 .title-container span {
   width: 30%;
 }
+
+@media (max-width: 1000px){
+  .title-container{
+    display: none;
+  }
+}

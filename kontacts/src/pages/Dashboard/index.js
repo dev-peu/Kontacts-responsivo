@@ -41,9 +41,10 @@ export default function Dashboard() {
         <div className="table">
           <TableTitleRow titles={["Nome", "Email", "Telefone"]} />
           <div className="rows">
-            {kontacts.map((kontact) => (
+            {/* {kontacts.map((kontact) => (
               <TableRow key={kontact.id} kontact={kontact} />
-            ))}
+            ))} */}
+            <TableRow/>
           </div>
         </div>
       </main>
