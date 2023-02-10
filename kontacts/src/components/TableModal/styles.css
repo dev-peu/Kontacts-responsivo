@@ -58,3 +58,9 @@
   padding: 16px;
   border-radius: 8px;
 }
+
+@media (max-width: 1000px){
+  .modal{
+    min-width: auto;
+  }
+}

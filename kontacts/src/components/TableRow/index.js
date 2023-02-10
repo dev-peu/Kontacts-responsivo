@@ -1,12 +1,11 @@
 import editIcon from "../../assets/icons/pen.svg";
 import trashIcon from "../../assets/icons/trash.svg";
-import clipIcon from "../../assets/icons/clip.svg";
-// import useUtils from "../../hooks/useUtils";
+import useUtils from "../../hooks/useUtils";
 import "./styles.css";
 
 export default function TableRow({ kontact }) {
   // const { nome, email, telefone } = kontact;
-  // const { setKontactToDelete, setModal, setShowDeleteModal } = useUtils();
+  const { setKontactToDelete, setModal, setShowDeleteModal } = useUtils();
 
 
   return (
@@ -33,7 +32,7 @@ export default function TableRow({ kontact }) {
     //     />
     //   </div>
     // </div>
-    <div className="row-container">
+    <div onClick={() => [setModal({ status: true, type: "edit", kontact: {nome: "pedro", email: "pedrocadast@Gmail.com", telefone: "38998273349"} })]} className="row-container">
       <span className="name">Pedro</span>
       <span >
         pedrocadast@gmail.com
