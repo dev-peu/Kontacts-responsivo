@@ -1,30 +1,31 @@
 import { Button } from "@mui/material";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import TableTitleRow from "../../components/TableTitleRow";
 import TableRow from "../../components/TableRow";
-import api from "../../services/api";
-import auth from "../../utils/auth";
+// import api from "../../services/api";
+// import auth from "../../utils/auth";
 import TableModal from "../../components/TableModal";
 import useUtils from "../../hooks/useUtils";
 import "./styles.css";
 import DeleteRowModal from "../../components/DeleteRowModal";
+import kontacts from "../../utils/users";
 
 export default function Dashboard() {
-  const [kontacts, setKontacts] = useState([]);
+  // const [kontacts, setKontacts] = useState([]);
   const { modal, setModal, showDeleteModal } = useUtils();
 
-  useEffect(() => {
-    async function getKontacts() {
-      try {
-        const response = await api.get("/contatos", auth());
-        setKontacts([...response.data]);
-      } catch (error) {
-        console.log(error.response.data);
-      }
-    }
-    getKontacts();
-  }, [kontacts]);
+  // useEffect(() => {
+  //   async function getKontacts() {
+  //     try {
+  //       const response = await api.get("/contatos", auth());
+  //       setKontacts([...response.data]);
+  //     } catch (error) {
+  //       console.log(error.response.data);
+  //     }
+  //   }
+  //   getKontacts();
+  // }, [kontacts]);
 
   return (
     <div className="container dashboard">
@@ -41,10 +42,10 @@ export default function Dashboard() {
         <div className="table">
           <TableTitleRow titles={["Nome", "Email", "Telefone"]} />
           <div className="rows">
-            {/* {kontacts.map((kontact) => (
+            {kontacts.map((kontact) => (
               <TableRow key={kontact.id} kontact={kontact} />
-            ))} */}
-            <TableRow/>
+            ))}
+            <TableRow />
           </div>
         </div>
       </main>
