@@ -1,21 +1,21 @@
 const users = [
   {
     id: 1,
-    name: "pedro",
+    nome: "pedro",
     email: "pedrocadast@gmail.com",
-    tel: "38998273349",
+    telefone: "38998273349",
   },
   {
     id: 2,
-    name: "pedro",
+    nome: "pedro",
     email: "joao@email.com",
-    tel: "9999999999",
+    telefone: "9999999999",
   },
   {
     id: 1,
-    name: "ivy",
+    nome: "ivy",
     email: "ivy@emailteste.com",
-    tel: "1111111111",
+    telefone: "1111111111",
   },
 ];
 
